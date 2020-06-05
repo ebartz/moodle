@@ -1,0 +1,8 @@
+categories:
+- CMS
+namespace: moodle-tennant
+questions:
+- variable: moodleUsername
+  default: "user"
+  label: "Moodle Username"
+  type: string
