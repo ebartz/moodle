@@ -1,5 +1,5 @@
 dependencies:
 - name: mariadb
   version: 7.x.x
-  repository: https://charts.bitnami.com/bitnami
+  repository: https://github.com/ebartz/moodle
   condition: mariadb.enabled
