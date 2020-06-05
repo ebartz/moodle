@@ -1,0 +1,21 @@
+categories:
+- CMS
+namespace: moodle-tennant
+questions:
+- variable: moodleUsername
+  default: "user"
+  label: "Moodle Username"
+  type: string
+- variable: ingress.enabled
+  default: false
+  type: boolean
+  label: Expose app using Layer 7 Load Balancer
+  description: "Expose app using Layer 7 Load Balancer - ingress"
+  show_subquestion_if: true
+  subquestions:
+  - variable: ingress.hosts[0].name
+    default: "xip.io" 
+    description: "layer 7 Load Balancer hostname"
+    type: hostname
+    required: true
+    label: Layer 7 Load Balancer Hostname
